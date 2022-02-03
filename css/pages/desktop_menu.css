@@ -17,6 +17,7 @@
   .restaurant__menu {
     display: flex;
     flex-wrap: wrap;
+    overflow: hidden;
     justify-content: space-between;
   }
   .restaurant__menu .restaurant__nom {

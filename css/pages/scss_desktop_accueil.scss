@@ -2,6 +2,8 @@ $couleur-primaire: #9256dc;
 $couleur-secondaire: #ff79da;
 $background-color: #f5f4f4;
 $couleur-tertiaire: #99e2d0;
+@media  screen and (min-width: 992px) {
+    
 
 header .logo {
     font-size: 40px;
@@ -68,4 +70,6 @@ footer {
         justify-content: space-around;
         margin-top: 30px;
     }
+}
+
 }

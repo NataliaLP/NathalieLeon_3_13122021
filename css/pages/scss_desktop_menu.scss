@@ -19,7 +19,7 @@ aside img {
 }
 .restaurant__menu {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;overflow: hidden;
     justify-content: space-between;
     .restaurant__nom {
         width: 100%;
