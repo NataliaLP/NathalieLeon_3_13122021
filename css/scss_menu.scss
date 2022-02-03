@@ -59,6 +59,9 @@ header {
         border-radius: 40px 40px 0 0 ;
         padding: 40px 15px 0 15px;
         transform: translateY(-50px);
+        .restaurant__menu--modif {
+            transform: translateY(-150px);
+        }
     }
     &__nom { 
         display: flex;
@@ -128,35 +131,10 @@ header {
     max-width: 390px;
     padding: 0;
     opacity: 0;
-    &_1 {
-        animation: fondu 3s 0.2s forwards;
+    @for $i from 1 through 10 {
+        &_#{$i} {
+            animation: fondu 3s calc(0.2s * $i) forwards;
         }
-    &_2 {
-        animation: fondu 3s 0.4s forwards;
-    }
-    &_3 {
-        animation: fondu 3s 0.6s forwards;
-    }
-    &_4 {
-        animation: fondu 3s 0.8s forwards;
-    }
-    &_5 {
-        animation: fondu 3s 1s forwards;
-    }
-    &_6 {
-        animation: fondu 3s 1.2s forwards;
-    }
-    &_7 {
-        animation: fondu 3s 1.4s forwards;
-    }
-    &_8 {
-        animation: fondu 3s 1.6s forwards;
-    }
-    &_9 {
-        animation: fondu 3s 1.8s forwards;
-    }
-    &_10 {
-        animation: fondu 3s 2s forwards;
     }
     &:hover {
         .menu__visible {
@@ -234,6 +212,7 @@ header {
     justify-content: center;
     padding-top: 20px;
     button {
+        @include bouton;
         display: flex;
         align-items: center;
         padding: 15px 50px;

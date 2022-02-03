@@ -42,6 +42,9 @@ header .logo {
   padding: 40px 15px 0 15px;
   transform: translateY(-50px);
 }
+.restaurant__menu .restaurant__menu--modif {
+  transform: translateY(-150px);
+}
 .restaurant__nom {
   display: flex;
   flex-direction: row;
@@ -209,6 +212,14 @@ header .logo {
   padding-top: 20px;
 }
 .bouton button {
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  background: linear-gradient(170deg, #ff79da, #9256dc);
+  border-radius: 100px;
+  border: none;
+  color: white;
+  box-shadow: 1px 4px 10px 4px rgba(0, 0, 0, 0.1);
+  opacity: 1;
   display: flex;
   align-items: center;
   padding: 15px 50px;
