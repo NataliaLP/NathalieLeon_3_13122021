@@ -1,0 +1,39 @@
+.loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    background-color: white;
+    z-index: 999;
+    animation: background_opacity 3s ease-in infinite;
+    animation-iteration-count: 1;
+    opacity: 0;
+    .fa-utensils {
+        padding: 30px;
+        display: inline-block;
+        font-size: 40px;
+        position: relative;
+        animation: couvert 1.5s ease-in infinite;
+        animation-iteration-count: 2;
+        transform-origin: bottom center;
+        opacity: 0;
+    } 
+    .premier {
+        color: #99e2d0;
+        animation-delay: 0.1s;    
+    }
+    .deuxieme {
+        color: #ff79da;
+        animation-delay: 0.2s;    
+    }
+    .troisieme {
+        color: #9256dc;
+        animation-delay: 0.3s;    
+    }
+}

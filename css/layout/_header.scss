@@ -29,13 +29,13 @@ header {
     }    
 }
 
-@media screen and (min-width: breakpoint-tablet-min) and (max-width: breakpoint-tablet-max) {
+@media screen and (min-width: $breakpoint-tablet-min) and (max-width: $breakpoint-tablet-max) {
     header .logo {
             font-size: 40px;
         }       
     
 }
-@media  screen and (min-width: breakpoint-desktop-min) {
+@media screen and (min-width: $breakpoint-desktop-min) {
     header .logo {
         font-size: 40px;
     }

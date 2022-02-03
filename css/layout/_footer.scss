@@ -12,6 +12,10 @@ footer {
         padding: 0;
         li {
             padding-bottom: 12px;
+            a {
+                text-decoration: none;
+                color: white;            
+            }
             i {
                 font-size: 0.8em;
             }
@@ -40,7 +44,7 @@ footer {
 
 }
 
-@media  screen and (min-width: breakpoint-desktop-min) {
+@media screen and (min-width: $breakpoint-desktop-min) {
     footer {
         height: auto;
         h4 {

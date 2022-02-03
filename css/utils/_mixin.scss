@@ -1,0 +1,10 @@
+@mixin bouton {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    background: linear-gradient(170deg, $couleur-secondaire, $couleur-primaire);
+    border-radius: 100px ;
+    border: none;
+    color: white;
+    box-shadow: $shadow-size $shadow-color;
+    opacity: 1;
+}
