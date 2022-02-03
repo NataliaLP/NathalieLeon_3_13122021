@@ -1,0 +1,53 @@
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  header {
+    padding-bottom: 20px;
+  }
+  header .logo {
+    font-size: 40px;
+  }
+
+  .introduction {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .presentation {
+    width: 55%;
+    margin-left: 10px;
+  }
+
+  .fonctionnement {
+    width: 45%;
+    margin-left: 20px;
+  }
+  .fonctionnement__titre {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .restaurant {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px 20px 40px 20px;
+  }
+  .restaurant h2 {
+    width: 100%;
+  }
+  .restaurant__fiche {
+    width: 47%;
+    margin: 0 10px;
+  }
+
+  footer {
+    height: auto;
+  }
+  footer ul {
+    max-height: 80px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
+/*# sourceMappingURL=tablet_accueil.css.map */

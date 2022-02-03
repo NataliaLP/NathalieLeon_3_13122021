@@ -1,0 +1,64 @@
+$couleur-primaire: #9256dc;
+$couleur-secondaire: #ff79da;
+$background-color: #f5f4f4;
+$couleur-tertiaire: #99e2d0;
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+body {
+    max-width: 992px;
+}
+.logo {
+    font-size: 40px;
+}
+
+.restaurant__menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   .restaurant__nom {
+        flex-direction: column;
+        justify-content: center;
+        width: 47%;
+        margin-right: 15px;
+        padding-bottom: 0;
+        h1 {
+            margin-bottom: 30px;
+            width: 100%;
+            text-align: center;
+        }
+        i {
+            width: 30px;
+            left: 160px;
+            top: 250px;
+        }
+    }
+}
+.mets {
+    width: 47%;
+    margin-right: 15px;
+    h2 {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 500;
+        padding-bottom: 10px;
+        border-bottom: solid $couleur-tertiaire 3px;
+    }
+}
+
+hr {
+    display: none;
+}
+
+.bouton {
+    width: 100%;
+}
+footer {
+    height: auto;
+    ul {
+        max-height: 80px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+}
