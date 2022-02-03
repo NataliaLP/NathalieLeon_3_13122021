@@ -1,0 +1,43 @@
+
+header {
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    font-size: 30px;
+    justify-content: space-between;
+    a { 
+        display: flex;
+        text-decoration: none;
+        color: black;
+        align-items: center;
+        padding-left: 20px;
+        font-size: 0.8em;
+        + .logo {
+            transform: translateX(-20px);
+        }
+    }
+    .logo {
+        display: flex;
+        justify-content: center;
+        font-family: 'Shrikhand', cursive;
+        font-size: 30px;
+        margin: auto;
+        padding-bottom: 6px;
+    
+    }    
+}
+
+@media screen and (min-width: breakpoint-tablet-min) and (max-width: breakpoint-tablet-max) {
+    header .logo {
+            font-size: 40px;
+        }       
+    
+}
+@media  screen and (min-width: breakpoint-desktop-min) {
+    header .logo {
+        font-size: 40px;
+    }
+    
+}

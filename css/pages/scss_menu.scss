@@ -1,9 +1,3 @@
-$couleur-primaire: #9256dc;
-$couleur-secondaire: #ff79da;
-$background-color: #f5f4f4;
-$couleur-tertiaire: #99e2d0;
-$shadow-color: rgba(0,0,0,0.1);
-$shadow-size: 1px 4px 10px 4px;
 @mixin bouton {
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
@@ -17,34 +11,8 @@ $shadow-size: 1px 4px 10px 4px;
 
 
 body {
-    font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
-    margin: 0;
-}
-header {
-    
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    font-size: 30px;
-
-    a { 
-        display: flex;
-        text-decoration: none;
-        color: black;
-        align-items: center;
-        padding-left: 20px;
-
-    }
-    .logo {
-        display: block;
-        font-family: 'Shrikhand', cursive;
-        padding-bottom: 6px;
-        margin: auto;    
-
-    }    
 }
 .restaurant {
     padding-bottom: 0;
@@ -227,32 +195,6 @@ header {
 
 
 
-footer {
-    background-color: rgba(0, 0, 0, 0.795);
-    color: white;
-    padding: 20px;
-    h4 {
-        font-family: 'Shrikhand', cursive;
-        font-weight: normal;
-        margin: 0;
-    }
-    ul {
-        list-style-type: none;
-        padding: 0;
-        li {
-            padding-bottom: 12px;
-            i {
-                font-size: 0.8em;
-            }
-            .fa-utensils {
-                padding-right: o10px;
-            }
-            .fa-hands-helping {
-                padding-right: 6px;
-            }
-        }
-    }
-}
 
 @keyframes fondu {
     from {

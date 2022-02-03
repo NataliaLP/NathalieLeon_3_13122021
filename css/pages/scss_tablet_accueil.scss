@@ -1,13 +1,7 @@
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
 
 
 
-header {
-    padding-bottom: 20px;
-    .logo {
-        font-size: 40px;
-    }
-}
 .introduction {
     display: flex;
     flex-direction: row;
@@ -40,14 +34,5 @@ header {
     }
 }
 
-footer {
-    height: auto;
-    ul {
-        max-height: 80px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-}
 
 }

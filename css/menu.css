@@ -1,7 +1,5 @@
 body {
   font-family: "Roboto", sans-serif;
-  display: flex;
-  flex-direction: column;
   margin: 0;
 }
 
@@ -11,6 +9,7 @@ header {
   flex-wrap: nowrap;
   justify-content: center;
   font-size: 30px;
+  justify-content: space-between;
 }
 header a {
   display: flex;
@@ -18,12 +17,87 @@ header a {
   color: black;
   align-items: center;
   padding-left: 20px;
+  font-size: 0.8em;
+}
+header a + .logo {
+  transform: translateX(-20px);
 }
 header .logo {
-  display: block;
+  display: flex;
+  justify-content: center;
   font-family: "Shrikhand", cursive;
-  padding-bottom: 6px;
+  font-size: 30px;
   margin: auto;
+  padding-bottom: 6px;
+}
+
+@media screen and (min-width: breakpoint-tablet-min) and (max-width: breakpoint-tablet-max) {
+  header .logo {
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: breakpoint-desktop-min) {
+  header .logo {
+    font-size: 40px;
+  }
+}
+footer {
+  background-color: rgba(0, 0, 0, 0.795);
+  color: white;
+  padding: 20px;
+}
+footer h4 {
+  font-family: "Shrikhand", cursive;
+  font-weight: normal;
+  margin: 0;
+}
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+footer ul li {
+  padding-bottom: 12px;
+}
+footer ul li i {
+  font-size: 0.8em;
+}
+footer ul li .fa-utensils {
+  padding-right: 10px;
+}
+footer ul li .fa-hands-helping {
+  padding-right: 6px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  footer {
+    height: auto;
+  }
+  footer ul {
+    max-height: 80px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: breakpoint-desktop-min) {
+  footer {
+    height: auto;
+  }
+  footer h4 {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 0;
+    border-bottom: solid 1px white;
+  }
+  footer ul {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+}
+body {
+  display: flex;
+  flex-direction: column;
 }
 
 .restaurant {
@@ -229,33 +303,6 @@ header .logo {
   box-shadow: 1px 4px 10px 4px rgba(0, 0, 0, 0.4);
 }
 
-footer {
-  background-color: rgba(0, 0, 0, 0.795);
-  color: white;
-  padding: 20px;
-}
-footer h4 {
-  font-family: "Shrikhand", cursive;
-  font-weight: normal;
-  margin: 0;
-}
-footer ul {
-  list-style-type: none;
-  padding: 0;
-}
-footer ul li {
-  padding-bottom: 12px;
-}
-footer ul li i {
-  font-size: 0.8em;
-}
-footer ul li .fa-utensils {
-  padding-right: o10px;
-}
-footer ul li .fa-hands-helping {
-  padding-right: 6px;
-}
-
 @keyframes fondu {
   from {
     opacity: 0;
@@ -264,15 +311,7 @@ footer ul li .fa-hands-helping {
     opacity: 1;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  body {
-    max-width: 992px;
-  }
-
-  .logo {
-    font-size: 40px;
-  }
-
+@media screen and (min-width: 768px) and (max-width: 991px) {
   .restaurant__menu {
     display: flex;
     flex-direction: row;
@@ -315,22 +354,8 @@ footer ul li .fa-hands-helping {
   .bouton {
     width: 100%;
   }
-
-  footer {
-    height: auto;
-  }
-  footer ul {
-    max-height: 80px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
 }
 @media screen and (min-width: 992px) {
-  header .logo {
-    font-size: 40px;
-  }
-
   aside img {
     max-height: 300px;
     object-fit: cover;
@@ -381,21 +406,6 @@ footer ul li .fa-hands-helping {
 
   .bouton {
     width: 100%;
-  }
-
-  footer {
-    height: auto;
-  }
-  footer h4 {
-    font-size: 25px;
-    text-align: center;
-    margin-top: 0;
-    border-bottom: solid 1px white;
-  }
-  footer ul {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
   }
 }
 

@@ -1,13 +1,6 @@
-$couleur-primaire: #9256dc;
-$couleur-secondaire: #ff79da;
-$background-color: #f5f4f4;
-$couleur-tertiaire: #99e2d0;
 
 @media  screen and (min-width: 992px) {
 
-header .logo {
-    font-size: 40px;
-}
 aside img {
     max-height: 300px;
     object-fit: cover;
@@ -52,20 +45,6 @@ aside img {
 }
 .bouton {
     width: 100%;
-}
-footer {
-    height: auto;
-    h4 {
-        font-size: 25px;
-        text-align: center;
-        margin-top: 0;
-        border-bottom: solid 1px white;
-    }
-    ul {
-        display: flex;
-        justify-content: space-around;
-        margin-top: 30px;
-    }
 }
 
 }

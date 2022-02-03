@@ -1,15 +1,5 @@
-$couleur-primaire: #9256dc;
-$couleur-secondaire: #ff79da;
-$background-color: #f5f4f4;
-$couleur-tertiaire: #99e2d0;
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
 
-body {
-    max-width: 992px;
-}
-.logo {
-    font-size: 40px;
-}
 
 .restaurant__menu {
     display: flex;
@@ -51,14 +41,5 @@ hr {
 
 .bouton {
     width: 100%;
-}
-footer {
-    height: auto;
-    ul {
-        max-height: 80px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
 }
 }
