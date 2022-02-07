@@ -317,17 +317,15 @@ button:hover {
     display: flex;
     flex-direction: row;
   }
-
-  .presentation {
+  .introduction .presentation {
     width: 55%;
     margin-left: 10px;
   }
-
-  .fonctionnement {
+  .introduction .fonctionnement {
     width: 45%;
     margin-left: 20px;
   }
-  .fonctionnement__titre {
+  .introduction .fonctionnement__titre {
     margin-top: 0;
     text-align: center;
   }
@@ -365,13 +363,12 @@ button:hover {
     margin-top: 0;
   }
 
-  .fonctionnement__titre {
-    font-style: italic;
-  }
-
   #fonctionnement--modif {
     flex-direction: row;
     justify-content: space-around;
+  }
+  #fonctionnement--modif .fonctionnement__titre {
+    font-style: italic;
   }
 
   .restaurant {

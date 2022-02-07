@@ -175,29 +175,28 @@
     .introduction {
         display: flex;
         flex-direction: row;
-    }
-    .presentation {
-        width: 55%;
-        margin-left: 10px;
-    }
-    .fonctionnement {
-        width: 45%;
-        margin-left: 20px;
-        &__titre {
-            margin-top: 0;
-            text-align: center;
+        .presentation {
+            width: 55%;
+            margin-left: 10px;
         }
+        .fonctionnement {
+            width: 45%;
+            margin-left: 20px;
+            &__titre {
+                margin-top: 0;
+                text-align: center;
+            }
+        }
+    
     }
     .restaurant {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         padding: 20px 20px 40px 20px;
-    
         h2 {
             width: 100%;
         }
-        
         &__fiche {
             width: 47%;
             margin: 0 10px;
@@ -224,14 +223,14 @@
             margin-top: 0;
         }
     }
-    .fonctionnement__titre {
-    
-        font-style: italic;
-    
-    }
     #fonctionnement--modif{
         flex-direction: row;
         justify-content: space-around;
+        .fonctionnement__titre {
+    
+            font-style: italic;
+        
+        }    
     }
     
     .restaurant {
@@ -240,18 +239,14 @@
         justify-content: space-between;
         border-radius: 60px;
         margin: 0 30px 40px 30px;
-    
-    
         h2 {
             width: 100%;
             text-align: center;
             border-bottom: solid 3px $couleur-tertiaire;
             padding-bottom: 30px;
-    
         }
         &__fiche {
             width: 23%;
         }
     }
-    
 }
