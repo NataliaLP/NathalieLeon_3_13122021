@@ -524,7 +524,7 @@ body {
   overflow: hidden;
   position: relative;
 }
-.restaurants__images .restaurant__nouveau {
+.restaurants__images .restaurants__nouveau {
   padding: 5px 0px 5px 0px;
   width: 25%;
   margin: 0;
