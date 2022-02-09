@@ -93,7 +93,7 @@
 }
     
 
-.restaurant {
+.restaurants {
     background-color: $background-color;
     padding: 40px 20px 40px 20px;
     a {
@@ -189,7 +189,7 @@
         }
     
     }
-    .restaurant {
+    .restaurants {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -199,7 +199,7 @@
         }
         &__fiche {
             width: 47%;
-            margin: 0 10px;
+            margin: 0 10px 20px 10px;
         }
     }
 }
@@ -233,7 +233,7 @@
         }    
     }
     
-    .restaurant {
+    .restaurants {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
